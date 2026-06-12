@@ -1,10 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-  <title>VÉRANO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VÉRANO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo', sans-serif;
+}
+
+body{
+background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+color:white;
+}
+
+/* HEADER */
+header{
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #222;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#D4AF37;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+/* HERO */
+.hero{
+height:75vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.95)),
+url('https://images.unsplash.com/photo-1521334884684-d80222895322?w=1600');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:50px;
+color:#D4AF37;
+}
+
+.hero p{
+margin-top:10px;
+font-size:20px;
+color:#ddd;
+}
+
+.btn{
+margin-top:25px;
+background:#D4AF37;
+color:black;
+padding:14px 28px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+box-shadow:0 0 20px rgba(212,175,55,0.3);
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 35px rgba(212,175,55,0.6);
+}
+
+/* PRODUCTS */
+.products{
+padding:50px 20px;
+}
+
+.products h2{
+text-align:center;
+margin-bottom:30px;
+color:#D4AF37;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+padding:15px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#D4AF37;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+color:#D4AF37;
+margin-top:10px;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:32px;}
+.hero p{font-size:16px;}
+}
+</style>
 </head>
-<body style="background:black; color:white; text-align:center; font-family:Arial;">
-  <h1 style="color:#D4AF37; margin-top:100px;">VÉRANO</h1>
-  <p>Timeless Elegance</p>
+
+<body>
+
+<header>
+<div class="logo">VÉRANO</div>
+<div>Timeless Elegance</div>
+</header>
+
+<section class="hero">
+<h1>VÉRANO</h1>
+<p>أناقة خالدة لعشاق الفخامة</p>
+<a href="#products" class="btn">تسوق الآن</a>
+</section>
+
+<section class="products" id="products">
+<h2>المنتجات المميزة</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600">
+<h3>قميص فاخر</h3>
+<div class="price">15 ر.ع</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600">
+<h3>جاكيت أنيق</h3>
+<div class="price">35 ر.ع</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600">
+<h3>طقم عصري</h3>
+<div class="price">25 ر.ع</div>
+</div>
+
+</div>
+</section>
+
 </body>
 </html>
