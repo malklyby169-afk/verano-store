@@ -313,51 +313,7 @@ Request a Quote
   
 © 2026 VÉRANO Tech. All Rights Reserved.
 </footer>
-<script>
-const translations = {
-  en: {
-    subtitle: "Tech",
-    description: "Premium Web Design & IT Solutions",
-    soon: "SOON"
-  },
-  ar: {
-    subtitle: "تقنية",
-    description: "تصميم مواقع احترافي وحلول تقنية متكاملة",
-    soon: "قريباً"
-  }
-};
 
-const langBtn = document.createElement("button");
-langBtn.innerHTML = "العربية | English";
-langBtn.style.position = "fixed";
-langBtn.style.top = "20px";
-langBtn.style.right = "20px";
-langBtn.style.padding = "10px 15px";
-langBtn.style.border = "none";
-langBtn.style.borderRadius = "10px";
-langBtn.style.background = "#D4AF37";
-langBtn.style.color = "#000";
-langBtn.style.cursor = "pointer";
-document.body.appendChild(langBtn);
-
-let currentLang = "en";
-
-langBtn.onclick = () => {
-  currentLang = currentLang === "en" ? "ar" : "en";
-
-  document.querySelector(".subtitle").innerText =
-    translations[currentLang].subtitle;
-
-  document.querySelector(".description").innerText =
-    translations[currentLang].description;
-
-  document.querySelector(".soon").innerText =
-    translations[currentLang].soon;
-
-  document.documentElement.lang = currentLang;
-  document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
-};
-</script>
 </body>
   <nav>
 <a href="#">Home</a>
