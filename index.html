@@ -319,7 +319,44 @@ Request a Quote
 <a href="#">Portfolio</a>
 <a href="#">Contact</a>
 </nav>
+<script>
+const langBtn = document.createElement("button");
 
+langBtn.innerHTML = "العربية | English";
+
+langBtn.style.position = "fixed";
+langBtn.style.top = "20px";
+langBtn.style.right = "20px";
+langBtn.style.padding = "12px 18px";
+langBtn.style.border = "none";
+langBtn.style.borderRadius = "12px";
+langBtn.style.background = "#D4AF37";
+langBtn.style.color = "#000";
+langBtn.style.fontWeight = "bold";
+langBtn.style.cursor = "pointer";
+
+document.body.appendChild(langBtn);
+
+let arabic = false;
+
+langBtn.onclick = () => {
+  arabic = !arabic;
+
+  document.documentElement.lang = arabic ? "ar" : "en";
+  document.documentElement.dir = arabic ? "rtl" : "ltr";
+
+  document.querySelector(".subtitle").innerText =
+    arabic ? "تقنية" : "Tech";
+
+  document.querySelector(".description").innerText =
+    arabic
+      ? "تصميم مواقع احترافي وحلول تقنية متكاملة"
+      : "Premium Web Design & IT Solutions";
+
+  document.querySelector(".soon").innerText =
+    arabic ? "قريباً" : "SOON";
+};
+</script>
 </body>
 </html>
   
