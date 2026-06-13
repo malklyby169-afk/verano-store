@@ -7,76 +7,58 @@
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-background:#0D0D0D;
-color:#FFFFFF;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-overflow:hidden;
+    background:#000;
+    color:#fff;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
 }
 
 .container{
-padding:20px;
-max-width:800px;
+    max-width:800px;
 }
 
 .logo{
-font-size:4rem;
-font-weight:700;
-letter-spacing:8px;
-color:#D4AF37;
-margin-bottom:10px;
+    font-size:70px;
+    font-weight:700;
+    color:#D4AF37;
+    letter-spacing:6px;
 }
 
-.subtitle{
-font-size:1.8rem;
-font-weight:600;
-color:#FFFFFF;
-margin-bottom:10px;
+.tech{
+    font-size:28px;
+    color:#ffffff;
+    margin-top:5px;
+    letter-spacing:8px;
 }
 
-.description{
-font-size:1rem;
-color:#CFCFCF;
-margin-bottom:50px;
+.tagline{
+    margin-top:25px;
+    font-size:20px;
+    color:#cccccc;
 }
 
 .soon{
-font-size:4rem;
-font-weight:bold;
-color:#D4AF37;
-letter-spacing:15px;
-animation:pulse 2s infinite;
+    margin-top:50px;
+    font-size:42px;
+    font-weight:bold;
+    color:#D4AF37;
+    letter-spacing:4px;
 }
 
-.arabic{
-margin-top:15px;
-font-size:1.2rem;
-color:#BDBDBD;
-}
-
-@keyframes pulse{
-0%{
-opacity:.5;
-transform:scale(1);
-}
-50%{
-opacity:1;
-transform:scale(1.08);
-}
-100%{
-opacity:.5;
-transform:scale(1);
-}
+.soon-ar{
+    margin-top:10px;
+    font-size:22px;
+    color:#ffffff;
 }
 </style>
 </head>
@@ -84,25 +66,15 @@ transform:scale(1);
 <body>
 
 <div class="container">
+    <div class="logo">VÉRANO</div>
+    <div class="tech">TECH</div>
 
-<div class="logo">VÉRANO</div>
+    <div class="tagline">
+        Premium Web Design & IT Solutions
+    </div>
 
-<div class="subtitle">
-Tech
-</div>
-
-<div class="description">
-Premium Web Design & IT Solutions
-</div>
-
-<div class="soon">
-SOON
-</div>
-
-<div class="arabic">
-قريبــــاً
-</div>
-
+    <div class="soon">COMING SOON</div>
+    <div class="soon-ar">قريباً</div>
 </div>
 
 </body>
