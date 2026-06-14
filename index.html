@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VÉRANO Tech</title>
+
 <style>
 *{
 margin:0;
@@ -11,30 +12,59 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
+
 body{
 background:#0B0B0B;
 color:#fff;
 line-height:1.8;
 }
+
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+border-bottom:1px solid #222;
+position:sticky;
+top:0;
+background:#0B0B0B;
+}
+
+nav a{
+color:#ccc;
+text-decoration:none;
+margin:0 10px;
+font-size:14px;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+/* HEADER */
 header{
 text-align:center;
 padding:80px 20px;
 }
+
 header img{
-width:240px;
-max-width:90%;
+width:220px;
 margin-bottom:20px;
 }
+
 h1{
 font-size:4rem;
-letter-spacing:8px;
+letter-spacing:6px;
 color:#D4AF37;
 }
+
 .tagline{
-font-size:1.3rem;
+font-size:1.2rem;
 color:#ccc;
 margin-top:15px;
 }
+
 .hero-btn{
 display:inline-block;
 margin-top:30px;
@@ -46,155 +76,220 @@ font-weight:bold;
 border-radius:12px;
 transition:.3s;
 }
+
 .hero-btn:hover{
 transform:scale(1.05);
 }
+
+/* SECTIONS */
 .section{
 max-width:1100px;
 margin:auto;
 padding:70px 20px;
 }
+
 .section-title{
 text-align:center;
-font-size:2.2rem;
+font-size:2rem;
 color:#D4AF37;
 margin-bottom:40px;
 }
-.services{
+
+/* GRID */
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
+
+/* CARD */
 .card{
 background:#161616;
-padding:25px;
-border-radius:18px;
+padding:20px;
+border-radius:16px;
 border:1px solid #2b2b2b;
-transition:.4s;
+transition:.3s;
 text-align:center;
 }
+
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 25px rgba(212,175,55,.35);
+transform:translateY(-6px);
+box-shadow:0 0 20px rgba(212,175,55,.25);
 }
+
 .card h3{
 color:#D4AF37;
+margin:10px 0;
+}
+
+.card p{
+color:#bbb;
+font-size:14px;
+}
+
+/* IMAGE */
+.card img{
+width:100%;
+border-radius:12px;
 margin-bottom:10px;
 }
+
+/* ABOUT */
 .about{
 text-align:center;
 max-width:800px;
 margin:auto;
-color:#ddd;
+color:#ccc;
 }
+
+/* CONTACT */
 .contact{
 text-align:center;
 }
+
 .contact a{
 color:#D4AF37;
 text-decoration:none;
 }
+
+/* FOOTER */
 footer{
 text-align:center;
 padding:30px;
 border-top:1px solid #222;
-color:#888;
+color:#777;
 margin-top:50px;
 }
+
 </style>
 </head>
+
 <body>
+
+<!-- NAV -->
+<nav>
+<div style="color:#D4AF37;font-weight:bold;">VÉRANO</div>
+<div>
+<a href="#services">الخدمات</a>
+<a href="#work">الأعمال</a>
+<a href="#contact">تواصل</a>
+</div>
+</nav>
+
+<!-- HERO -->
 <header>
-<img src="88B2E5C2-7043-49B7-9499-89BC5E566AA4.png" alt="VÉRANO Logo">
+<img src="images/logo.png" alt="VÉRANO Logo">
 <h1>VÉRANO</h1>
 <div class="tagline">
-نبني مواقع إلكترونية احترافية وحلولاً تقنية عصرية
+نبني مواقع إلكترونية احترافية + تصاميم براندات عصرية
 </div>
 
-ابدأ مشروعك الآن
+<a href="#contact" class="hero-btn">ابدأ مشروعك الآن</a>
 </header>
-<section class="section">
+
+<!-- SERVICES -->
+<section class="section" id="services">
 <h2 class="section-title">خدماتنا</h2>
-<div class="services">
+
+<div class="grid">
+
 <div class="card">
 <h3>🌐 تصميم المواقع</h3>
-<p>مواقع حديثة وسريعة ومتوافقة مع جميع الأجهزة.</p>
+<p>مواقع حديثة وسريعة ومتجاوبة مع جميع الأجهزة</p>
 </div>
+
 <div class="card">
 <h3>🛒 المتاجر الإلكترونية</h3>
-<p>إنشاء متاجر إلكترونية احترافية جاهزة للبيع.</p>
+<p>إنشاء متاجر احترافية جاهزة للبيع</p>
 </div>
+
 <div class="card">
 <h3>🎨 الهوية البصرية</h3>
-<p>تصميم الشعارات والهوية التجارية باحترافية.</p>
+<p>تصميم شعارات وهوية كاملة للبراند</p>
 </div>
+
 <div class="card">
 <h3>⚙️ حلول تقنية</h3>
-<p>خدمات تقنية متكاملة للأفراد والشركات.</p>
+<p>تطوير وبرمجة مشاريع تقنية حديثة</p>
 </div>
+
 </div>
 </section>
+
+<!-- WHY US -->
 <section class="section">
-<h2 class="section-title">لماذا تختار VÉRANO Tech؟</h2>
-<div class="services">
+<h2 class="section-title">لماذا نحن؟</h2>
+
+<div class="grid">
+
 <div class="card">
-<h3>⚡ سرعة التنفيذ</h3>
-<p>إنجاز المشاريع بسرعة مع الحفاظ على الجودة.</p>
+<h3>⚡ سرعة</h3>
+<p>تنفيذ المشاريع بسرعة وجودة عالية</p>
 </div>
+
 <div class="card">
-<h3>📱 متوافق مع الجوال</h3>
-<p>تصميم متجاوب يعمل على جميع الأجهزة.</p>
+<h3>📱 متجاوب</h3>
+<p>يعمل على جميع الأجهزة بدون مشاكل</p>
 </div>
+
 <div class="card">
-<h3>🎯 جودة عالية</h3>
-<p>تفاصيل دقيقة وتجربة مستخدم احترافية.</p>
+<h3>🎯 احترافية</h3>
+<p>تصميمات دقيقة وتجربة مستخدم قوية</p>
 </div>
+
 </div>
 </section>
-<section class="section">
-<h2 class="section-title">إنجازاتنا</h2>
-<div class="services">
+
+<!-- WORK -->
+<section class="section" id="work">
+<h2 class="section-title">أعمالنا</h2>
+
+<div class="grid">
+
 <div class="card">
-<h3>50+</h3>
-<p>مشروع مكتمل</p>
+<img src="images/tshirt1.png">
+<h3>VÉRANO T-Shirt 01</h3>
+<p>تصميم تيشيرت براند فاخر</p>
 </div>
+
 <div class="card">
-<h3>100%</h3>
-<p>رضا العملاء</p>
+<img src="images/tshirt2.png">
+<h3>VÉRANO T-Shirt 02</h3>
+<p>ستايل حديث وهوية قوية</p>
 </div>
+
 <div class="card">
-<h3>24/7</h3>
-<p>دعم فني</p>
+<img src="images/web1.png">
+<h3>Website Project</h3>
+<p>تصميم موقع احترافي</p>
 </div>
+
 </div>
 </section>
+
+<!-- ABOUT -->
 <section class="section">
 <h2 class="section-title">من نحن</h2>
+
 <div class="about">
-في VÉRANO Tech نساعد الأفراد والشركات على بناء حضور رقمي قوي من خلال تصميم مواقع إلكترونية حديثة وتقديم حلول تقنية مبتكرة وهوية بصرية احترافية.
+VÉRANO Tech فريق متخصص في تصميم المواقع والتصاميم الرقمية، نساعدك تبني هوية قوية وموقع احترافي يعكس مشروعك.
 </div>
 </section>
-<section class="section">
-<h2 class="section-title">أعمالنا</h2>
-<div class="about">
-قريباً سيتم عرض أحدث مشاريع وأعمال VÉRANO Tech هنا.
-</div>
-</section>
-<section class="section">
+
+<!-- CONTACT -->
+<section class="section" id="contact">
 <h2 class="section-title">تواصل معنا</h2>
+
 <div class="contact">
 <p>📱 واتساب: +968 99763836</p>
 <p>📧 info@veranotech.com</p>
-<p>
-📸 Instagram:
-<a href="https://www.instagram.com/verano.omn" target="_blank">
-@verano.omn
-</a>
-</p>
+<p>📸 Instagram: <a href="https://www.instagram.com/verano.omn" target="_blank">@verano.omn</a></p>
 </div>
 </section>
+
 <footer>
 © 2026 VÉRANO Tech - All Rights Reserved
 </footer>
+
 </body>
 </html>
